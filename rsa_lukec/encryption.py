@@ -110,14 +110,3 @@ def encrypt(public_key, data_to_encrypt: int):
 def decrypt(private_key, data_to_decrypt: int):
     """Decrypt data of type int"""
     return (data_to_decrypt ** private_key[1]) % private_key[0]
-
-
-keys = EncryptionKeys()
-
-private_key = keys.get_private_key()
-public_key = keys.get_public_key()
-
-encrypted = encrypt(public_key, 91)
-print(encrypted)
-decrypted = decrypt(private_key, encrypted)
-print(decrypted)
