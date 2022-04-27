@@ -1,4 +1,4 @@
-from rsa import encryption
+from rsa_lukec import encryption
 
 def setup():
     print("SETUP!")
