@@ -1,6 +1,4 @@
-from nose.tools import *
-
-from RSA import encryption
+from rsa import encryption
 
 def setup():
     print("SETUP!")
