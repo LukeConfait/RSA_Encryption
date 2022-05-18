@@ -92,15 +92,6 @@ class EncryptionKeys:
             public_exponent(self.primes[0], self.primes[1]),
         ]
 
-    def get_primes(self):
-        return self.primes
-
-    def get_private_key(self):
-        return self.private_key
-
-    def get_public_key(self):
-        return self.public_key
-
 
 def encrypt(public_key, data_to_encrypt: int):
     """Encrypt data of type int"""
